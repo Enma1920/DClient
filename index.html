@@ -3,66 +3,72 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
 
     </head>
     <body>
-        <div class="bloc1">
+        <header class="header">
             <h1>
                 Welcome to My Blog
             </h1>
     
-            <nav>
-                <button><b> Home</b><a href=""></a></button>
-                <button><b>Categories</b><a href=""></a></button>
-                <button><b>About</b><a href=""></a></button>
-                <button><b>Contact</b><a href=""></a></button>
-    
-            </nav>
+            <nav class="top-navigation">
+                <ul>
+                    <li><b><a href="#"></a> Home</b></a></li>
+                    <li><b><a href="#"></a>Categories</b></a></li>
+                    <li><b><a href="#"></a>About</b></a></li>
+                    <li><b><a href="#"></a>Contact</b></a></li>
 
-        </div>
+                </ul>
+            </nav>
+        </header>
         
-        <div id="bloquecentral">
-            <div class="bloc2">
-                <h2>Post Title 1</h2>
-                <div class="fecha"><i> Published on Spetember 12, 2023 by John Doe</i></div>
-                <div>
+        <main class="main-content">
+            <section class="bloc2">
+                <article>
+                    <h2>Post Title 1</h2>
+                    <p class="fecha"><i> Published on Spetember 12, 2023 by John Doe</i></p>
+                    
                     <p>This is the content of the blog post...</p>
                 
                     <p>More content goes here...</p>
-                </div>
-
-                <h2>Post Title 2</h2>
-                <div class="fecha"><i> Published on Spetember 10, 2023 by Jane Smith</i></div>
-                <div>
+                </article>
+                <article>
+                    <h2>Post Title 2</h2>
+                    <p class="fecha"><i> Published on Spetember 10, 2023 by Jane Smith</i></p>
                     <p> This is another blog post...</p>
-                
                     <p>More content goes here...</p>
-                    <br>
-                    
-                    
-                </div>
-            </div>
+                    <br>     
+                </article>
+            </section>
 
-            <div class="bloc3">
-                <h2>Recent Posts</h2>
-                <p><b>Post Title 1</p>
-                <p>Post Title 2</p>
-                <p>Post Title 3</b></p>
-                <p>
-                <h2>Categories</h2>
-                <p><b>Category 1</p>
-                <p>Category 2</p>
-                <p>Category 3</b></p>
-                <br>
-                
-            </div>
-        
-        </div>
-        
+            <aside class="bloc3">
+                <section >
+
+                    <h2>Recent Posts</h2>
+                    <ul>
+                        <li><a href="#">Post Title 1</a></li>
+                        <li><a href="#">Post Title 2</a></li>
+                        <li><a href="#">Post Title 3</a></li>
+                    </ul>
+                </section>    
+                <section>
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#">Categories 1</a></li>
+                        <li><a href="#">Categories 2</a></li>
+                        <li><a href="#">Categories 3</a></li>
+                    </ul>
+
+                </section>
+            </aside>
+        </main>
+        <footer>
+            &copy 2023 My Blog. All rights reserved.
+        </footer>
+
     </body>
-    <footer>
-        ©️2023 My Blog. All rights reserved.
-    </footer>
+    
 </html>
 
+<!-- git add git commit git push -->
