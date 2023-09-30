@@ -1,34 +1,122 @@
 
-.header{
-    display: grid;
-    place-content: center;
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
 }
-footer{
-    display: grid;
-    place-content: center;
-    padding-top: 20px;
+
+.wrapper{
+    width: 75vw;
+    margin: 32px auto 0;  
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-top__heading{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
 
 }
-.fecha{
+
+.header-top__nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.nav-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-top__nav ul li{
     
+    border: 1px solid grey;
+    padding: 4px;
+    font-weight: bold;
+
     border-radius: 4px;
-    background-color: rgb(190, 186, 186);
-    height: 25px;
-    padding-left: 8px;
-    padding-top: 5px;
 }
-.bloc2{   
-    border-right: 1px solid grey;
-    padding-right: 20px;
+
+.nav-list li a {
+    color: grey;
+    text-decoration: none;
 }
-.bloc3{   
-    padding-left: 20px;
+
+.main-content{
+    display: grid;
+    grid-template-columns: 10fr 2fr;  
+}
+
+.section-article__heading{
+    color: black;
+}
+.section-article>h2{
+    font-size: 1.5em;
+}
+.aside-section>h2{
+    font-size: 1.5em;
+
+}
+.aside-section ul{
+    font-weight: bold;
+}
+.aside-section__list{
+    list-style-type: none;
+
     
 }
 
-#bloquecentral{
-    display: grid;
-    grid-template-columns: 5fr 2fr;
+.aside-section__list a{
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+    
+}
+
+.aside-section__list li{
+    padding: 4px;
+}
+
+.section-article p{
+    padding: 4px;
+}
+.section-article h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.aside-section h2{
+    padding-bottom:10px;
+    padding-top: 10px;
+} 
+.main-content{
     border-bottom: 1px solid grey;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.main-section{
+    border-right: 1px solid grey;
+}
+
+.section-article__date{
+    background-color: rgb(198, 195, 195);
+    font-style: italic;
+    border-radius: 5px;
+    margin-right: 20px;
+
+}
+
+.aside{
+    margin-left: 10px;
 }

@@ -1,69 +1,69 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
     <head>
         <meta charset="utf-8">
-        <!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
 
     </head>
-    <body>
-        <header class="header">
-            <h1>
+    <body class="wrapper">
+        <header class="header-top">
+            <h1 class="header-top__heading">
                 Welcome to My Blog
             </h1>
     
-            <nav class="top-navigation">
-                <ul>
-                    <li><b><a href="#"></a> Home</b></a></li>
-                    <li><b><a href="#"></a>Categories</b></a></li>
-                    <li><b><a href="#"></a>About</b></a></li>
-                    <li><b><a href="#"></a>Contact</b></a></li>
+            <nav class="header-top__nav">
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="#"> Home</a></li>
+                    <li class="nav-list__item"><a href="#">Categories</a></li>
+                    <li class="nav-list__item"><a href="#">About</a></li>
+                    <li class="nav-list__item"><a href="#">Contact</a></li>
 
                 </ul>
             </nav>
         </header>
         
         <main class="main-content">
-            <section class="bloc2">
-                <article>
-                    <h2>Post Title 1</h2>
-                    <p class="fecha"><i> Published on Spetember 12, 2023 by John Doe</i></p>
+            <section class="main-section">
+                <article class="section-article">
+                    <h2 class="section-article__heading">Post Title 1</h2>
+                    <p class="section-article__date"> Published on Spetember 12, 2023 by John Doe</p>
                     
-                    <p>This is the content of the blog post...</p>
+                    <p class="section-article__content">This is the content of the blog post...</p>
                 
-                    <p>More content goes here...</p>
+                    <p class="section-article__content">More content goes here...</p>
                 </article>
-                <article>
-                    <h2>Post Title 2</h2>
-                    <p class="fecha"><i> Published on Spetember 10, 2023 by Jane Smith</i></p>
-                    <p> This is another blog post...</p>
-                    <p>More content goes here...</p>
+                <article class="section-article">
+                    <h2 class="section-article__heading">Post Title 2</h2>
+                    <p class="section-article__date"> Published on Spetember 10, 2023 by Jane Smith</p>
+                    <p class="section-article__content"> This is another blog post...</p>
+                    <p class="section-article__content">More content goes here...</p>
                     <br>     
                 </article>
             </section>
 
-            <aside class="bloc3">
-                <section >
+            <aside class="aside">
+                <section class="aside-section">
 
-                    <h2>Recent Posts</h2>
-                    <ul>
-                        <li><a href="#">Post Title 1</a></li>
-                        <li><a href="#">Post Title 2</a></li>
-                        <li><a href="#">Post Title 3</a></li>
+                    <h2 class="aside-section__heading">Recent Posts</h2>
+                    <ul class="aside-section__list">
+                        <li class="section-list__title"><a href="#">Post Title 1</a></li>
+                        <li class="section-list__title"><a href="#">Post Title 2</a></li>
+                        <li class="section-list__title"><a href="#">Post Title 3</a></li>
                     </ul>
                 </section>    
-                <section>
-                    <h2>Categories</h2>
-                    <ul>
-                        <li><a href="#">Categories 1</a></li>
-                        <li><a href="#">Categories 2</a></li>
-                        <li><a href="#">Categories 3</a></li>
+                <section class="aside-section">
+                    <h2 class="categories__heading">Categories</h2>
+                    <ul class="aside-section__list">
+                        <li class="section-list__title"><a href="#">Categories 1</a></li>
+                        <li class="section-list__title"><a href="#">Categories 2</a></li>
+                        <li class="section-list__title"><a href="#">Categories 3</a></li>
                     </ul>
 
                 </section>
             </aside>
         </main>
-        <footer>
+        <footer class="footer">
             &copy 2023 My Blog. All rights reserved.
         </footer>
 
